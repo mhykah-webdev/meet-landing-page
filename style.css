@@ -1,0 +1,383 @@
+:root {
+    --clr-teal: #4D96A9;
+    --clr-purple: #855FB1;
+    --clr-blue: #8FE3F9;
+    --clr-pink: #D9B8FF;
+    --clr-black: #28283D;
+    --clr-grey: #87879D;
+    --clr-white: #FAFAFA;
+
+    --ff-sans: 'Red Hat Display', sans-serif;
+
+    --fw-medium: 500;
+    --fw-black: 900;
+
+    --fs-h1: 4rem;
+    --fs-h2: 2.5rem;
+    --fs-overline: 1rem;
+    --fs-body: 1rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+html {
+    background-color: var(--clr-white);
+    color: var(--clr-grey);
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-body);
+    line-height: 1.625rem;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-weight: var(--fw-black);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    color: var(--clr-black);
+}
+
+h2 {
+    font-weight: var(--fw-black);
+    font-size: var(--fs-h2);
+    line-height: 2.75rem;
+    color: var(--clr-black);
+}
+
+h3 {
+    font-weight: var(--fw-black);
+    font-size: var(--fs-overline);
+    line-height: 1.625rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--clr-teal);
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3.38rem;
+}
+
+.hero {
+    margin-bottom: 4rem;
+}
+
+.hero>picture {
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.hero>picture>img {
+    margin-inline: auto;
+    position: relative;
+    right: 5%;
+    min-width: 110vw;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+.hero .hero-blurb {
+    margin-inline: auto;
+}
+
+.hero div {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    color: var(--clr-white);
+    border-radius: 1.8125rem;
+    font-size: 1rem;
+    font-weight: var(--fw-black);
+    align-self: center;
+    width: 12.0625rem;
+    height: 3.625rem;
+    white-space: nowrap;
+}
+
+.button-teal {
+    background-color: var(--clr-teal);
+}
+
+
+.button-teal:hover {
+    background-color: #71C0D4;
+}
+
+.button-teal span {
+    color: var(--clr-blue);
+}
+
+.button-purple {
+    background-color: var(--clr-purple);
+}
+
+.button-purple:hover {
+    background-color: #B188DD;
+}
+
+
+.button-purple span {
+    color: var(--clr-pink);
+}
+
+.button-long {
+    padding: 1rem 2.5rem;
+}
+
+.button-short {
+    padding: 1rem 1.81rem;
+}
+
+/* MEETINGS */
+
+.meetings {
+    margin-bottom: 4rem;
+}
+
+.vertical-line {
+    border: 0.5px solid rgba(135, 135, 157, 0.25);
+    height: 5.25rem;
+    width: 0px;
+    margin-inline: auto;
+}
+
+.section-number {
+    display: grid;
+    place-content: center;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    width: 3.5rem;
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+    border-radius: 50%;
+    font-weight: var(--fw-black);
+    margin-bottom: 4rem;
+    background-color: var(--clr-white);
+    color: var(--clr-grey);
+}
+
+.meetings picture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 3.5rem;
+    padding-inline: 1.5rem;
+}
+
+.meetings picture img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.meetings .meetings-blurb {
+    padding-inline: 1.5rem;
+}
+
+.meetings div h3 {
+    margin-bottom: 1.5rem;
+}
+
+.meetings div h2 {
+    margin-bottom: 2rem;
+}
+
+/* EXPERIENCE */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(77, 150, 168, 0.8955), rgba(77, 150, 169, 0.8955)), url(images/mobile/image-footer.jpg);
+    background-size: cover;
+    color: var(--clr-white);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.5rem;
+    padding-top: 5rem;
+}
+
+.section-two-mark .vertical-line {
+    height: 7rem;
+}
+
+.section-two-mark .section-number {
+    margin: -1.75rem;
+    margin-inline: auto;
+}
+
+.section-two-mark {
+    position: relative;
+    z-index: 1;
+}
+
+.experience h2 {
+    color: var(--clr-white);
+    margin-bottom: 1.5rem;
+}
+
+.experience p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+@media (min-width: 700px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .hero-blurb {
+        max-width: 28.5725rem;
+    }
+
+    .hero .hero-buttons {
+        flex-direction: row;
+    }
+
+    .meetings picture {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin-bottom: 3.5rem;
+        padding-inline: 1.5rem;
+    }
+
+    .meetings .meetings-blurb {
+        padding-inline: 6rem;
+    }
+
+    .experience {
+        padding-inline: 6rem;
+        background-image: linear-gradient(rgba(77, 150, 168, 0.8955), rgba(77, 150, 169, 0.8955)), url(images/tablet/image-footer.jpg);
+
+    }
+}
+
+@media (min-width: 900px) {
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero-desktop {
+        display: inline;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .meetings-blurb {
+        display: grid;
+        max-width: 42rem;
+        margin-inline: auto;
+    }
+
+    .meetings picture {
+        margin-inline: 9.8rem;
+    }
+
+    .experience {
+        flex-direction: row;
+        text-align: left;
+        gap: 5.75rem;
+        background-image: linear-gradient(rgba(77, 150, 168, 0.8955), rgba(77, 150, 169, 0.8955)), url(images/desktop/image-footer.jpg);
+
+    }
+
+    .experience button {
+        align-self: flex-start;
+    }
+}
