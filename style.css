@@ -147,6 +147,10 @@ button {
     max-width: 12rem;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .button-long {
     padding: 1rem 2.5rem;
 }
@@ -159,12 +163,20 @@ button {
     background-color: var(--clr-teal);
 }
 
+.button-teal:hover {
+    background-color: #71C0D4;
+}
+
 .button-purple {
     background-color: var(--clr-purple);
 }
 
 .button-teal>span {
     color: var(--clr-light-blue);
+}
+
+.button-purple:hover {
+    background-color: #B18BDD;
 }
 
 .button-purple>span {
