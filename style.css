@@ -337,6 +337,10 @@ h2 {
 }
 
 @media (min-width: 60rem) {
+    header>img {
+        padding-bottom: 6.75rem;
+    }
+
     .hero {
         display: grid;
         gap: 0rem;
