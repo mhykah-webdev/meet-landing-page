@@ -294,6 +294,10 @@ h2 {
         padding-inline: 9.75rem;
     }
 
+    .hero>.blurb>p {
+        font-size: 1.125rem;
+    }
+
     h1 {
         font-size: 3rem;
     }
