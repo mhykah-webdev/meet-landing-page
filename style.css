@@ -190,7 +190,7 @@ button:hover {
 .line {
     height: 5.25rem;
     width: 1rem;
-    border-left: 1px solid var(--clr-grey);
+    border-left: 1px solid hsl(240, 10%, 57%, 0.25);
     position: relative;
     left: 50%;
 }
@@ -201,7 +201,7 @@ button:hover {
     height: 3.5rem;
     position: relative;
     left: calc(50% - 1.75rem);
-    border: 1px solid var(--clr-grey);
+    border: 1px solid hsl(240, 10%, 57%, 0.25);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -238,6 +238,7 @@ button:hover {
 h2 {
     font-size: 2rem;
     line-height: 36px;
+    color: var(--clr-black);
 }
 
 .meetings {
