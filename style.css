@@ -372,6 +372,7 @@ h2 {
     .photo-tiles {
         gap: 2rem;
         margin-bottom: 5rem;
+        padding-inline: 10.25rem;
     }
 
     .meetings {
@@ -386,6 +387,7 @@ h2 {
     }
 
     .together {
+        background-image: url('assets/desktop/image-footer.jpg');
         display: grid;
         grid-auto-flow: column;
         text-align: left;
